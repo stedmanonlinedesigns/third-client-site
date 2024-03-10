@@ -6,7 +6,8 @@ const IndexPage: React.FC<PageProps> = () => {
   return (
     <div>
       <h1>Third client page</h1>
-      <Button />
+      <p>Here is some added content.</p>
+      <Button look="contained" />
     </div>
   )
 }

@@ -1,10 +1,13 @@
 import React from 'react'
 import { Button as MUIButton } from '@mui/material'
 
-type Props = {}
+// Get props type form MUI types
+type Props = {
+  look?: 'contained' | 'outlined' | 'text'
+}
 
-export default function Button({}: Props) {
+export default function Button({ look }: Props) {
   return (
-    <MUIButton variant='text'>Button</MUIButton>
+    <MUIButton variant={look}>Button</MUIButton>
   )
 }
